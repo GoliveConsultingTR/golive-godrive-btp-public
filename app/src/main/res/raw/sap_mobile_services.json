@@ -1,0 +1,18 @@
+{
+  "__comment": "When modifying this file, you need to reset or reinstall all current client installations",
+  "auth": [{
+      "type": "oauth2",
+      "config": {
+        "oauth2.clients": [
+
+          { "clientID": "73325f03-8fb9-424e-868f-99656fa7cd49", "redirectURL": "https://btp-pay-as-you-go-9f6golau-dev-com-golive-godrive-publicbtp.cfapps.ap10.hana.ondemand.com", "grantType": "authorization_code" }
+        ],
+        "oauth2.tokenEndpoint": "https://btp-pay-as-you-go-9f6golau-dev-com-golive-godrive-publicbtp.cfapps.ap10.hana.ondemand.com/oauth2/api/v1/token",
+        "oauth2.authorizationEndpoint": "https://btp-pay-as-you-go-9f6golau-dev-com-golive-godrive-publicbtp.cfapps.ap10.hana.ondemand.com/oauth2/api/v1/authorize"
+      },
+      "requireOtp": false
+    }],
+  "ServiceUrl" : "https://btp-pay-as-you-go-9f6golau-dev-com-golive-godrive-publicbtp.cfapps.ap10.hana.ondemand.com/",
+  "appID": "com.golive.godrive.publicbtp",
+  "multiUser": false
+}

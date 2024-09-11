@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.golive.godrive.btppublic.databinding.simplepropertyformcell.Converter"/>
+        <import type="android.view.View"/>
+        <variable name="aOutbDeliveryHeaderTextType" type="com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryHeaderTextType"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+        <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_update_aoutbdeliveryheadertexttype"
+                    android:orientation="vertical">
+
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textelementdescriptionid"
+                        android:tag="TextElementDescription"
+                        android:maxLength="@{30}"
+                        app:key="TextElementDescription"
+                        app:value="@={aOutbDeliveryHeaderTextType.textElementDescription}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textelementtextid"
+                        android:tag="TextElementText"
+                        app:key="TextElementText"
+                        app:value="@={aOutbDeliveryHeaderTextType.textElementText}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliverylongtextisformattedid"
+                        android:tag="DeliveryLongTextIsFormatted"
+                        app:key="DeliveryLongTextIsFormatted"
+                        app:value="@={Converter.toString(deliverylongtextisformattedid, aOutbDeliveryHeaderTextType.deliveryLongTextIsFormatted, aOutbDeliveryHeaderTextType.deliveryLongTextIsFormatted)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

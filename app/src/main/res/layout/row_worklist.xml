@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mcv_fo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:strokeColor="@color/color_divider"
+    app:strokeWidth="0.5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_warning_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/please"
+                    android:textColor="@color/app_color_softRed"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_warning_message_seperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/sd_no"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_siparis_no"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:text=""
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/colorAppWorklistSubLines" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/freight_unit_no"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_navlun_birimi_no"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:text=""
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_printer_seperator"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/colorAppWorklistSubLines"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/ll_printer"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/customer_code"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_musteri_kodu"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:text=""
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/colorAppWorklistSubLines" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/customer_name"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_musteri_adi"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/customer_phone"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_musteri_telefonu"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/colorAppWorklistSubLines" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:text="@string/customer_address"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_musteri_adresi"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|start"
+                    android:gravity="center_vertical|start"
+                    android:textColor="@color/app_color_blue"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines" />
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

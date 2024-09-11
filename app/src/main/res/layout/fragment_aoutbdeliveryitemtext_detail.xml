@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aoutbdeliveryitemtext.AOutbDeliveryItemTextActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryItemTextType" />
+        <variable name="aOutbDeliveryItemTextType" type="AOutbDeliveryItemTextType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.aoutbdeliveryitemtext.AOutbDeliveryItemTextDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryDocument"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.deliveryDocument).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryDocumentItem"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.deliveryDocumentItem).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElement"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.textElement).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="Language"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.language).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElementDescription"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.textElementDescription).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElementText"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.textElementText).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryLongTextIsFormatted"
+                        app:valueText="@{aOutbDeliveryItemTextType.getOptionalValue(AOutbDeliveryItemTextType.deliveryLongTextIsFormatted).toString()}" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

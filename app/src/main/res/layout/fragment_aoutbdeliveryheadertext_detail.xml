@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aoutbdeliveryheadertext.AOutbDeliveryHeaderTextActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryHeaderTextType" />
+        <variable name="aOutbDeliveryHeaderTextType" type="AOutbDeliveryHeaderTextType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.aoutbdeliveryheadertext.AOutbDeliveryHeaderTextDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryDocument"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.deliveryDocument).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElement"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.textElement).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="Language"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.language).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElementDescription"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.textElementDescription).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TextElementText"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.textElementText).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryLongTextIsFormatted"
+                        app:valueText="@{aOutbDeliveryHeaderTextType.getOptionalValue(AOutbDeliveryHeaderTextType.deliveryLongTextIsFormatted).toString()}" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

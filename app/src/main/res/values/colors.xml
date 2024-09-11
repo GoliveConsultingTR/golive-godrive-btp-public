@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_item">@color/sap_ui_list_picker_select</color>
+    <color name="default_item">@color/sap_ui_background_color</color>
+    <color name="active_item">@color/sap_ui_content_non_interactive_icon_color</color>
+    <color name="red">#FF0000</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="link_text">@color/sap_custom_morning_t4</color>
+    <color name="golive">#c2d232</color>
+    <!-- Avatar background -->
+    <color name="onboarding_avatar_background">@color/golive</color>
+    <color name="app_color_text">#282828</color>
+    <color name="colorAppWorklistSubLines">#eeeeee</color>
+    <color name="app_color_white">#ffffff</color>
+    <color name="color_divider">#d1d1d1</color>
+    <color name="app_color_softRed">#f03c55</color>
+    <color name="app_color_blue">#002891</color>
+    <color name="colorAppWorklistHeader">#212121</color>
+    <color name="app_color_green">#50CC1a</color>
+    <color name="app_color_darkGray">#eaeaea</color>
+    <color name="app_color_input_gray">#6A6A6A</color>
+    <color name="colorGreen">#C5EBC3</color>
+
+</resources>

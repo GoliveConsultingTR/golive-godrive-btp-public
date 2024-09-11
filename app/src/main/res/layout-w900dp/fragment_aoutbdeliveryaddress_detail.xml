@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aoutbdeliveryaddress.AOutbDeliveryAddressActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryAddressType" />
+        <variable name="aOutbDeliveryAddressType" type="AOutbDeliveryAddressType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.aoutbdeliveryaddress.AOutbDeliveryAddressDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AddressID"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.addressID).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBox"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBox).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxDeviatingCountry"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxDeviatingCountry).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalStreetPrefixName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.additionalStreetPrefixName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalStreetSuffixName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.additionalStreetSuffixName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AddressTimeZone"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.addressTimeZone).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Building"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.building).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BusinessPartnerName1"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.businessPartnerName1).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BusinessPartnerName2"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.businessPartnerName2).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BusinessPartnerName3"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.businessPartnerName3).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BusinessPartnerName4"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.businessPartnerName4).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CareOfName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.careOfName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CityCode"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.cityCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CityName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.cityName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CitySearch"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.citySearch).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CompanyPostalCode"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.companyPostalCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CorrespondenceLanguage"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.correspondenceLanguage).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Country"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.country).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="County"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.county).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryServiceNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.deliveryServiceNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryServiceTypeCode"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.deliveryServiceTypeCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="District"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.district).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="FaxNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.faxNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Floor"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.floor).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="FormOfAddress"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.formOfAddress).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="FullName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.fullName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HomeCityName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.homeCityName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HouseNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.houseNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HouseNumberSupplementText"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.houseNumberSupplementText).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Nation"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.nation).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Person"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.person).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PhoneNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.phoneNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxDeviatingCityName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxDeviatingCityName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxDeviatingRegion"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxDeviatingRegion).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxIsWithoutNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxIsWithoutNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxLobbyName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxLobbyName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PoBoxPostalCode"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.poBoxPostalCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PostalCode"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.postalCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrfrdCommMediumType"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.prfrdCommMediumType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Region"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.region).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="RoomNumber"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.roomNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SearchTerm1"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.searchTerm1).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StreetName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.streetName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StreetPrefixName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.streetPrefixName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StreetSearch"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.streetSearch).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StreetSuffixName"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.streetSuffixName).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TaxJurisdiction"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.taxJurisdiction).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TransportZone"
+            app:valueText="@{aOutbDeliveryAddressType.getOptionalValue(AOutbDeliveryAddressType.transportZone).toString()}" />
+
+    </LinearLayout>
+</layout>

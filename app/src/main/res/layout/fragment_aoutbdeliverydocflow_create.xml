@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.golive.godrive.btppublic.databinding.simplepropertyformcell.Converter"/>
+        <import type="android.view.View"/>
+        <variable name="aOutbDeliveryDocFlowType" type="com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryDocFlowType"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+        <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_update_aoutbdeliverydocflowtype"
+                    android:orientation="vertical">
+
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliveryversionid"
+                        android:tag="Deliveryversion"
+                        android:maxLength="@{4}"
+                        app:key="Deliveryversion"
+                        app:value="@={aOutbDeliveryDocFlowType.deliveryversion}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/precedingdocumentcategoryid"
+                        android:tag="PrecedingDocumentCategory"
+                        android:maxLength="@{4}"
+                        app:key="PrecedingDocumentCategory"
+                        app:value="@={aOutbDeliveryDocFlowType.precedingDocumentCategory}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subsequentdocumentid"
+                        android:tag="Subsequentdocument"
+                        android:maxLength="@{10}"
+                        app:key="Subsequentdocument"
+                        app:value="@={aOutbDeliveryDocFlowType.subsequentdocument}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/quantityinbaseunitid"
+                        android:tag="QuantityInBaseUnit"
+                        app:key="QuantityInBaseUnit"
+                        app:value="@={Converter.toString(quantityinbaseunitid, aOutbDeliveryDocFlowType.quantityInBaseUnit, aOutbDeliveryDocFlowType.quantityInBaseUnit)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subsequentdocumentitemid"
+                        android:tag="SubsequentDocumentItem"
+                        android:maxLength="@{6}"
+                        app:key="SubsequentDocumentItem"
+                        app:value="@={aOutbDeliveryDocFlowType.subsequentDocumentItem}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sdfulfillmentcalculationruleid"
+                        android:tag="SDFulfillmentCalculationRule"
+                        android:maxLength="@{1}"
+                        app:key="SdFulfillmentCalculationRule"
+                        app:value="@={aOutbDeliveryDocFlowType.sdFulfillmentCalculationRule}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/transferorderinwrhsmgmtisconfdid"
+                        android:tag="TransferOrderInWrhsMgmtIsConfd"
+                        app:key="TransferOrderInWrhsMgmtIsConfd"
+                        app:value="@={Converter.toString(transferorderinwrhsmgmtisconfdid, aOutbDeliveryDocFlowType.transferOrderInWrhsMgmtIsConfd, aOutbDeliveryDocFlowType.transferOrderInWrhsMgmtIsConfd)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aoutbdeliveryitem.AOutbDeliveryItemActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryItemType" />
+        <variable name="aOutbDeliveryItemType" type="AOutbDeliveryItemType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.aoutbdeliveryitem.AOutbDeliveryItemDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryDocument"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryDocument).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryDocumentItem"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryDocumentItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ActualDeliveredQtyInBaseUnit"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.actualDeliveredQtyInBaseUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ActualDeliveryQuantity"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.actualDeliveryQuantity).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalCustomerGroup1"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalCustomerGroup1).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalCustomerGroup2"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalCustomerGroup2).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalCustomerGroup3"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalCustomerGroup3).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalCustomerGroup4"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalCustomerGroup4).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalCustomerGroup5"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalCustomerGroup5).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalMaterialGroup1"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalMaterialGroup1).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalMaterialGroup2"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalMaterialGroup2).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalMaterialGroup3"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalMaterialGroup3).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalMaterialGroup4"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalMaterialGroup4).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AdditionalMaterialGroup5"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.additionalMaterialGroup5).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="AlternateProductNumber"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.alternateProductNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BaseUnit"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.baseUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Batch"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.batch).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BatchBySupplier"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.batchBySupplier).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BatchClassification"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.batchClassification).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BomExplosion"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.bomExplosion).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="BusinessArea"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.businessArea).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConsumptionPosting"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.consumptionPosting).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ControllingArea"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.controllingArea).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CostCenter"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.costCenter).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreatedByUser"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.createdByUser).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreationDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.creationDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreationTime"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.creationTime).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CustEngineeringChgStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.custEngineeringChgStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryDocumentItemCategory"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryDocumentItemCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryDocumentItemText"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryDocumentItemText).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryQuantityUnit"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryQuantityUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryRelatedBillingStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryRelatedBillingStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryToBaseQuantityDnmntr"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryToBaseQuantityDnmntr).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryToBaseQuantityNmrtr"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryToBaseQuantityNmrtr).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryVersion"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.deliveryVersion).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DepartmentClassificationByCust"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.departmentClassificationByCust).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DistributionChannel"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.distributionChannel).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Division"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.division).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="EuDeliveryItemARCStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.euDeliveryItemARCStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="FixedShipgProcgDurationInDays"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.fixedShipgProcgDurationInDays).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GlAccount"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.glAccount).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GoodsMovementReasonCode"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.goodsMovementReasonCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GoodsMovementStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.goodsMovementStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GoodsMovementType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.goodsMovementType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HigherLvlItmOfBatSpltItm"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.higherLvlItmOfBatSpltItm).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HigherLevelItem"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.higherLevelItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="InspectionLot"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.inspectionLot).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="InspectionPartialLot"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.inspectionPartialLot).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IntercompanyBillingStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.intercompanyBillingStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="InternationalArticleNumber"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.internationalArticleNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="InventorySpecialStockType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.inventorySpecialStockType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="InventoryValuationType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.inventoryValuationType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IsCompletelyDelivered"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.isCompletelyDelivered).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IsNotGoodsMovementsRelevant"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.isNotGoodsMovementsRelevant).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IsSeparateValuation"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.isSeparateValuation).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssgOrRcvgBatch"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issgOrRcvgBatch).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssgOrRcvgMaterial"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issgOrRcvgMaterial).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssgOrRcvgSpclStockInd"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issgOrRcvgSpclStockInd).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssgOrRcvgStockCategory"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issgOrRcvgStockCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssgOrRcvgValuationType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issgOrRcvgValuationType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssuingOrReceivingPlant"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issuingOrReceivingPlant).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IssuingOrReceivingStorageLoc"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.issuingOrReceivingStorageLoc).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemBillingBlockReason"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemBillingBlockReason).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemBillingIncompletionStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemBillingIncompletionStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemDeliveryIncompletionStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemDeliveryIncompletionStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemGdsMvtIncompletionSts"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemGdsMvtIncompletionSts).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemGeneralIncompletionStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemGeneralIncompletionStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemGrossWeight"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemGrossWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemIsBillingRelevant"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemIsBillingRelevant).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemNetWeight"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemNetWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemPackingIncompletionStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemPackingIncompletionStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemPickingIncompletionStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemPickingIncompletionStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemVolume"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemVolume).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemVolumeUnit"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemVolumeUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ItemWeightUnit"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.itemWeightUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="LastChangeDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.lastChangeDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="LoadingGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.loadingGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ManufactureDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.manufactureDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Material"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.material).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="MaterialByCustomer"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.materialByCustomer).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="MaterialFreightGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.materialFreightGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="MaterialGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.materialGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="MaterialIsBatchManaged"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.materialIsBatchManaged).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="MaterialIsIntBatchManaged"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.materialIsIntBatchManaged).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="NumberOfSerialNumbers"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.numberOfSerialNumbers).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OrderID"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.orderID).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OrderItem"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.orderItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OriginalDeliveryQuantity"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.originalDeliveryQuantity).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OriginallyRequestedMaterial"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.originallyRequestedMaterial).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OverdelivTolrtdLmtRatioInPct"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.overdelivTolrtdLmtRatioInPct).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackingStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.packingStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PartialDeliveryIsAllowed"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.partialDeliveryIsAllowed).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PaymentGuaranteeForm"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.paymentGuaranteeForm).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PickingConfirmationStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.pickingConfirmationStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PickingControl"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.pickingControl).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PickingStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.pickingStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Plant"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.plant).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrimaryPostingSwitch"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.primaryPostingSwitch).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProductAvailabilityDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.productAvailabilityDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProductAvailabilityTime"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.productAvailabilityTime).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProductConfiguration"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.productConfiguration).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProductHierarchyNode"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.productHierarchyNode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProfitabilitySegment"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.profitabilitySegment).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProfitCenter"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.profitCenter).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProofOfDeliveryRelevanceCode"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.proofOfDeliveryRelevanceCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ProofOfDeliveryStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.proofOfDeliveryStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="QuantityIsFixed"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.quantityIsFixed).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ReceivingPoint"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.receivingPoint).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ReferenceDocumentLogicalSystem"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.referenceDocumentLogicalSystem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ReferenceSDDocument"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.referenceSDDocument).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ReferenceSDDocumentCategory"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.referenceSDDocumentCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ReferenceSDDocumentItem"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.referenceSDDocumentItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="RetailPromotion"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.retailPromotion).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesDocumentItemType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.salesDocumentItemType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.salesGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOffice"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.salesOffice).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SdDocumentCategory"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.sdDocumentCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SdProcessStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.sdProcessStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ShelfLifeExpirationDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.shelfLifeExpirationDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StatisticsDate"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.statisticsDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StockType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.stockType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StorageBin"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.storageBin).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StorageLocation"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.storageLocation).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StorageType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.storageType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SubsequentMovementType"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.subsequentMovementType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TransportationGroup"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.transportationGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="UnderdelivTolrtdLmtRatioInPct"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.underdelivTolrtdLmtRatioInPct).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="UnlimitedOverdeliveryIsAllowed"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.unlimitedOverdeliveryIsAllowed).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="VarblShipgProcgDurationInDays"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.varblShipgProcgDurationInDays).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Warehouse"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.warehouse).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WarehouseActivityStatus"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.warehouseActivityStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WarehouseStagingArea"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.warehouseStagingArea).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WarehouseStockCategory"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.warehouseStockCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WarehouseStorageBin"
+            app:valueText="@{aOutbDeliveryItemType.getOptionalValue(AOutbDeliveryItemType.warehouseStorageBin).toString()}" />
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToASerialNmbrDelivery_to_SerialDeliveryItem}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_serialdeliveryitem"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="ASerialNmbrDelivery" />
+
+            <Button
+                android:id="@+id/link_button_to_to_serialdeliveryitem"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_sap_icon_arrow_right"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToAOutbDeliveryDocFlow_to_DocumentFlow}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_documentflow"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="AOutbDeliveryDocFlow" />
+
+            <Button
+                android:id="@+id/link_button_to_to_documentflow"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_sap_icon_arrow_right"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToAHandlingUnitItemDelivery_to_HandlingUnitItemDelivery}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_handlingunititemdelivery"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="AHandlingUnitItemDelivery" />
+
+            <Button
+                android:id="@+id/link_button_to_to_handlingunititemdelivery"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_sap_icon_arrow_right"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToAOutbDeliveryItemText_to_DeliveryDocumentItemText}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_deliverydocumentitemtext"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="AOutbDeliveryItemText" />
+
+            <Button
+                android:id="@+id/link_button_to_to_deliverydocumentitemtext"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_sap_icon_arrow_right"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

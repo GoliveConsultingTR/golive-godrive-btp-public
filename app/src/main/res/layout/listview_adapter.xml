@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/procuct_description"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/app_color_blue"
+                    android:text=""
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/colorAppWorklistSubLines" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/plan"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_plan"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/app_color_blue"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomSemiBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/delivered"
+                    android:textColor="@color/colorAppWorklistHeader"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/number"
+                    style="@style/CustomExtraBoldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_color_blue"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:background="@drawable/curved_border"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                     />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAppWorklistSubLines" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

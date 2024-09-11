@@ -1,0 +1,19 @@
+{
+  "projectInfo": {
+    "projectName": "GoDriveBtpPublic",
+    "createdDate": "Wednesday, September 4, 2024 at 4:22:23 PM",
+    "regenerateProxyClassDate": ""
+  },
+  "cloudApplication": {
+    "cloudApplicationId": "com.golive.godrive.publicbtp",
+    "destinations": [
+      {
+        "id": "com.sap.edm.sampleservice.v4"
+      },
+      {
+        "id": "com.golive.godrive.publicbtp"
+      }
+    ]
+  },
+  "msServerConfigurationName": "com.golive.godrive.btp"
+}

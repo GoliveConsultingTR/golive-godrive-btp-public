@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.amaintenanceitemobject.AMaintenanceItemObjectActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AMaintenanceItemObjectType" />
+        <variable name="aMaintenanceItemObjectType" type="AMaintenanceItemObjectType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.amaintenanceitemobject.AMaintenanceItemObjectDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MaintenanceItemObject"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.maintenanceItemObject).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MaintenanceItemObjectList"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.maintenanceItemObjectList).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="Assembly"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.assembly).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="Equipment"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.equipment).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="FunctionalLocation"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.functionalLocation).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MaintenanceNotification"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.maintenanceNotification).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MaintObjectLocAcctAssgmtNmbr"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.maintObjectLocAcctAssgmtNmbr).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="Material"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.material).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SerialNumber"
+                        app:valueText="@{aMaintenanceItemObjectType.getOptionalValue(AMaintenanceItemObjectType.serialNumber).toString()}" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

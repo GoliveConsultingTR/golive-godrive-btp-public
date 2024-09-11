@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.golive.godrive.btppublic.databinding.simplepropertyformcell.Converter"/>
+        <import type="android.view.View"/>
+        <variable name="aSerialNmbrDeliveryType" type="com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.ASerialNmbrDeliveryType"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+        <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_update_aserialnmbrdeliverytype"
+                    android:orientation="vertical">
+
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliverydateid"
+                        android:tag="DeliveryDate"
+                        app:key="DeliveryDate"
+                        app:value="@={Converter.toString(deliverydateid, aSerialNmbrDeliveryType.deliveryDate, aSerialNmbrDeliveryType.deliveryDate)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliverydocumentid"
+                        android:tag="DeliveryDocument"
+                        android:maxLength="@{10}"
+                        app:key="DeliveryDocument"
+                        app:value="@={aSerialNmbrDeliveryType.deliveryDocument}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliverydocumentitemid"
+                        android:tag="DeliveryDocumentItem"
+                        android:maxLength="@{6}"
+                        app:key="DeliveryDocumentItem"
+                        app:value="@={aSerialNmbrDeliveryType.deliveryDocumentItem}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sddocumentcategoryid"
+                        android:tag="SDDocumentCategory"
+                        android:maxLength="@{4}"
+                        app:key="SdDocumentCategory"
+                        app:value="@={aSerialNmbrDeliveryType.sdDocumentCategory}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

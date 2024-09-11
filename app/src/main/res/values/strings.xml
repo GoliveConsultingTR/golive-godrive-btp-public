@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="application_name">GoDrive</string>
+    <string name="eset_gettordataset">GetTorDataSet</string>
+    <string name="eset_gettordataset_single">GetTorData</string>
+    <string name="eset_gettoridset">GetTorIdSet</string>
+    <string name="eset_gettoridset_single">GetTorId</string>
+    <string name="eset_setloginset">SetLoginSet</string>
+    <string name="eset_setloginset_single">SetLogin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="eset_aserialnmbrdelivery">ASerialNmbrDelivery</string>
+    <string name="eset_aoutbdeliverypartner">AHandlingUnitItemDelivery</string>
+    <string name="eset_aoutbdeliveryitemtext">AOutbDeliveryItem</string>
+    <string name="eset_aoutbdeliveryitem">AOutbDeliveryHeaderText</string>
+    <string name="eset_aoutbdeliveryheadertext">AOutbDeliveryHeader</string>
+    <string name="eset_aoutbdeliveryheader">AOutbDeliveryDocFlow</string>
+    <string name="eset_aoutbdeliverydocflow">AOutbDeliveryAddress2</string>
+    <string name="eset_aoutbdeliveryaddress2">AOutbDeliveryDocFlow</string>
+    <string name="eset_aoutbdeliveryaddress">AOutbDeliveryAddress2</string>
+    <string name="eset_amaintenanceitemobject">AOutbDeliveryAddress</string>
+    <string name="eset_ahandlingunititemdelivery">AMaintenanceItemObject</string>
+    <string name="eset_ahandlingunitheaderdelivery">AHandlingUnitItemDelivery</string>
+
+</resources>

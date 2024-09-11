@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.ahandlingunitheaderdelivery.AHandlingUnitHeaderDeliveryActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AHandlingUnitHeaderDeliveryType" />
+        <variable name="aHandlingUnitHeaderDeliveryType" type="AHandlingUnitHeaderDeliveryType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.ahandlingunitheaderdelivery.AHandlingUnitHeaderDeliveryDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitInternalID"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitInternalID).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreatedByUser"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.createdByUser).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreationDate"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.creationDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CreationTime"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.creationTime).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveryDocument"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.deliveryDocument).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GrossVolume"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.grossVolume).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="GrossWeight"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.grossWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitBaseUnitOfMeasure"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitBaseUnitOfMeasure).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitContentDescription"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitContentDescription).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitExternalID"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitExternalID).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitExternalIdType"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitExternalIdType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitHeight"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitHeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitInternalStatus"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitInternalStatus).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitLength"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitLength).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitLowerLevelRefer"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitLowerLevelRefer).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitMaxVolume"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitMaxVolume).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitMaxWeight"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitMaxWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitNetVolume"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitNetVolume).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitSecondExternalID"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitSecondExternalID).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitTareVolume"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitTareVolume).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitTareVolumeUnit"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitTareVolumeUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitTareWeight"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitTareWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitTareWeightUnit"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitTareWeightUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitUoMDimension"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitUoMDimension).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="HandlingUnitWidth"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.handlingUnitWidth).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="LastChangeDate"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.lastChangeDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="LastChangedByUser"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.lastChangedByUser).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="LastChangeTime"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.lastChangeTime).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="NetWeight"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.netWeight).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackagingMaterial"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.packagingMaterial).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackagingMaterialCategory"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.packagingMaterialCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackagingMaterialGroup"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.packagingMaterialGroup).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackagingMaterialType"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.packagingMaterialType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PackingInstructionNumber"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.packingInstructionNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ShippingPoint"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.shippingPoint).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="VolumeUnit"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.volumeUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WeightUnit"
+            app:valueText="@{aHandlingUnitHeaderDeliveryType.getOptionalValue(AHandlingUnitHeaderDeliveryType.weightUnit).toString()}" />
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToAHandlingUnitItemDelivery_to_HandlingUnitItemDelivery}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_handlingunititemdelivery"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="AHandlingUnitItemDelivery" />
+
+            <Button
+                android:id="@+id/link_button_to_to_handlingunititemdelivery"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_sap_icon_arrow_right"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

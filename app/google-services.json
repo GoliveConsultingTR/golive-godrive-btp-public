@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822283091857",
+    "project_id": "godrivebtp",
+    "storage_bucket": "godrivebtp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822283091857:android:5bffeb0450421a87c9a430",
+        "android_client_info": {
+          "package_name": "com.golive.godrive.btppublic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3TIanZxmtCVuXBUui_7ZrQG8k5HYUnFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

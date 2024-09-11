@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aoutbdeliverydocflow.AOutbDeliveryDocFlowActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_outbound_delivery_srv_entities.AOutbDeliveryDocFlowType" />
+        <variable name="aOutbDeliveryDocFlowType" type="AOutbDeliveryDocFlowType"/>
+        <variable name="handler" type="com.golive.godrive.btppublic.mdui.aoutbdeliverydocflow.AOutbDeliveryDocFlowDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrecedingDocument"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.precedingDocument).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrecedingDocumentItem"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.precedingDocumentItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SubsequentDocumentCategory"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.subsequentDocumentCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Deliveryversion"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.deliveryversion).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrecedingDocumentCategory"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.precedingDocumentCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Subsequentdocument"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.subsequentdocument).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="QuantityInBaseUnit"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.quantityInBaseUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SubsequentDocumentItem"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.subsequentDocumentItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SdFulfillmentCalculationRule"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.sdFulfillmentCalculationRule).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TransferOrderInWrhsMgmtIsConfd"
+            app:valueText="@{aOutbDeliveryDocFlowType.getOptionalValue(AOutbDeliveryDocFlowType.transferOrderInWrhsMgmtIsConfd).toString()}" />
+
+    </LinearLayout>
+</layout>
