@@ -26,7 +26,7 @@ class MainBusinessActivity : AppCompatActivity() {
     private fun startEntitySetListActivity() {
         val sapServiceManager = (application as SAPWizardApplication).sapServiceManager
         sapServiceManager?.openODataStore {
-            val intent = Intent(this, EntitySetListActivity::class.java)
+            val intent = Intent(this, WorklistActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
         }

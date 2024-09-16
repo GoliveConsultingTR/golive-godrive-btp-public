@@ -144,7 +144,7 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     internal fun startOnboarding(activity: Activity) {
-        Util.uploadLog(lifecycleOwner = this)
+        //Util.uploadLog(lifecycleOwner = this)
         val appConfig = prepareAppConfig() ?: return
         val flowContext =
             FlowContextBuilder()

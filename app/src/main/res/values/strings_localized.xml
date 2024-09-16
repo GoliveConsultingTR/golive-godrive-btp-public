@@ -439,4 +439,7 @@
     <string name="fatura_message">Click the button below to create an invoice.</string>
     <string name="fatura_creat">Create Invoice</string>
 
+    <string name="please_wait">Please Wait</string>
+    <string name="data_get">Getting Data…</string>
+
 </resources>

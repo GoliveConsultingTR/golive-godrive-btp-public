@@ -432,4 +432,7 @@
     <string name="fatura_message">Fatura yaratmak için aşağıdaki butona tıklayınız.</string>
     <string name="fatura_creat">Fatura Yarat</string>
 
+    <string name="please_wait">Lütfen Bekleyiniz</string>
+    <string name="data_get">Veri Yükleniyor…</string>
+
 </resources>

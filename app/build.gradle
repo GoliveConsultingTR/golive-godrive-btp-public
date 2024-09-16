@@ -151,6 +151,17 @@ dependencies {
     // Java code also need this library to convert java class to kotlin class
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'com.github.Dan629pl:nordan-material-dialog-android:1.0.7'
+    //implementation "io.github.rupinderjeet:kprogresshud:1.0.0"
+    implementation 'com.github.blennerSilva:AwesomeDialog:2.0.6'
+    implementation 'com.github.jixiangjixiang:KProgressHUD:1.3'
 }
 
 
