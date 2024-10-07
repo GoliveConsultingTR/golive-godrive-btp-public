@@ -30,6 +30,18 @@ public class DocumentOrderResponse {
     @SerializedName("TranspOrdDocRefIssuerName")
     private String TranspOrdDocRefIssuerName;
 
+    public String getOdataEtag() {
+        return odataEtag;
+    }
+
+    public void setOdataEtag(String odataEtag) {
+        this.odataEtag = odataEtag;
+    }
+
+    @SerializedName("@odata.etag")
+    private String odataEtag;
+
+
     public String getTransportationOrderDocRefUUID() {
         return TransportationOrderDocRefUUID;
     }

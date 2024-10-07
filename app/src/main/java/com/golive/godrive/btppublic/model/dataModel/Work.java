@@ -17,6 +17,61 @@ public class Work implements Serializable {
     private String consigneeAddress;
     private String freightUnit;
     private String consigneeName;
+    private String product;
+    private  String planned;
+    private  String item;
+    private  String closed;
+
+    private  String teslimatKontrol;
+
+    public String getTeslimatKontrol() {
+        return teslimatKontrol;
+    }
+
+    public void setTeslimatKontrol(String teslimatKontrol) {
+        this.teslimatKontrol = teslimatKontrol;
+    }
+
+    public String getClosed() {
+        return closed;
+    }
+
+    public void setClosed(String closed) {
+        this.closed = closed;
+    }
+
+    public String getPc() {
+        return pc;
+    }
+
+    public void setPc(String pc) {
+        this.pc = pc;
+    }
+
+    private  String pc;
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+    public String getPlanned() {
+        return planned;
+    }
+
+    public void setPlanned(String planned) {
+        this.planned = planned;
+    }
 
     public String getIvTorid() {
         return ivTorid;

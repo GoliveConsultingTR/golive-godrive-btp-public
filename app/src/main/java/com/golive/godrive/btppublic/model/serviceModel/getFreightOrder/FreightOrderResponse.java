@@ -132,7 +132,38 @@ public class FreightOrderResponse {
     @SerializedName("YY1_Plaka_TOR")
     private String YY1_Plaka_TOR;
 
+    @SerializedName("@odata.etag")
+    private String odataEtag;
 
+    @SerializedName("YY1_YY_Driver_TOR")
+    private String YY1_YY_Driver_TOR;
+
+    @SerializedName("YY1_DriverDescription_TOR")
+    private String YY1_DriverDescription_TOR;
+
+    public String getYY1_DriverDescription_TOR() {
+        return YY1_DriverDescription_TOR;
+    }
+
+    public void setYY1_DriverDescription_TOR(String YY1_DriverDescription_TOR) {
+        this.YY1_DriverDescription_TOR = YY1_DriverDescription_TOR;
+    }
+
+    public String getYY1_YY_Driver_TOR() {
+        return YY1_YY_Driver_TOR;
+    }
+
+    public void setYY1_YY_Driver_TOR(String YY1_YY_Driver_TOR) {
+        this.YY1_YY_Driver_TOR = YY1_YY_Driver_TOR;
+    }
+
+    public String getOdataEtag() {
+        return odataEtag;
+    }
+
+    public void setOdataEtag(String odataEtag) {
+        this.odataEtag = odataEtag;
+    }
 
     public String getTransportationOrderUUID() {
         return TransportationOrderUUID;

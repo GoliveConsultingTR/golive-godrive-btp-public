@@ -7,50 +7,45 @@ public class SalesOrderResponse {
     @SerializedName("SalesOrder")
     private String SalesOrder;
 
-    @SerializedName("SalesOrderType")
-    private String SalesOrderType;
+    @SerializedName("SalesOrderItem")
+    private String SalesOrderItem;
 
-    @SerializedName("SalesOrderTypeInternalCode")
-    private String SalesOrderTypeInternalCode;
+    @SerializedName("SalesOrderItemText")
+    private String SalesOrderItemText;
 
-    @SerializedName("SalesOrganization")
-    private String SalesOrganization;
+    @SerializedName("OrderQuantityUnit")
+    private String OrderQuantityUnit;
 
-    @SerializedName("DistributionChannel")
-    private String DistributionChannel;
+    @SerializedName("ItemGrossWeight")
+    private String ItemGrossWeight;
 
-    @SerializedName("OrganizationDivision")
-    private String OrganizationDivision;
+    @SerializedName("ItemNetWeight")
+    private String ItemNetWeight;
 
-    @SerializedName("SalesGroup")
-    private String SalesGroup;
+    @SerializedName("NetAmount")
+    private String NetAmount;
 
-    @SerializedName("SalesOffice")
-    private String SalesOffice;
+    @SerializedName("RequestedQuantity")
+    private String RequestedQuantity;
 
-    @SerializedName("SalesDistrict")
-    private String SalesDistrict;
+    @SerializedName("RequestedQuantityUnit")
+    private String RequestedQuantityUnit;
 
-    @SerializedName("SoldToParty")
-    private String SoldToParty;
+    public String getRequestedQuantityUnit() {
+        return RequestedQuantityUnit;
+    }
 
-    @SerializedName("CreationDate")
-    private String CreationDate;
+    public void setRequestedQuantityUnit(String requestedQuantityUnit) {
+        RequestedQuantityUnit = requestedQuantityUnit;
+    }
 
-    @SerializedName("CreatedByUser")
-    private String CreatedByUser;
+    public String getRequestedQuantity() {
+        return RequestedQuantity;
+    }
 
-    @SerializedName("LastChangeDate")
-    private String LastChangeDate;
-
-    @SerializedName("SenderBusinessSystemName")
-    private String SenderBusinessSystemName;
-
-    @SerializedName("ExternalDocumentID")
-    private String ExternalDocumentID;
-
-    @SerializedName("LastChangeDateTime")
-    private String LastChangeDateTime;
+    public void setRequestedQuantity(String requestedQuantity) {
+        RequestedQuantity = requestedQuantity;
+    }
 
     public String getSalesOrder() {
         return SalesOrder;
@@ -60,123 +55,51 @@ public class SalesOrderResponse {
         SalesOrder = salesOrder;
     }
 
-    public String getSalesOrderType() {
-        return SalesOrderType;
+    public String getSalesOrderItem() {
+        return SalesOrderItem;
     }
 
-    public void setSalesOrderType(String salesOrderType) {
-        SalesOrderType = salesOrderType;
+    public void setSalesOrderItem(String salesOrderItem) {
+        SalesOrderItem = salesOrderItem;
     }
 
-    public String getSalesOrderTypeInternalCode() {
-        return SalesOrderTypeInternalCode;
+    public String getSalesOrderItemText() {
+        return SalesOrderItemText;
     }
 
-    public void setSalesOrderTypeInternalCode(String salesOrderTypeInternalCode) {
-        SalesOrderTypeInternalCode = salesOrderTypeInternalCode;
+    public void setSalesOrderItemText(String salesOrderItemText) {
+        SalesOrderItemText = salesOrderItemText;
     }
 
-    public String getSalesOrganization() {
-        return SalesOrganization;
+    public String getOrderQuantityUnit() {
+        return OrderQuantityUnit;
     }
 
-    public void setSalesOrganization(String salesOrganization) {
-        SalesOrganization = salesOrganization;
+    public void setOrderQuantityUnit(String orderQuantityUnit) {
+        OrderQuantityUnit = orderQuantityUnit;
     }
 
-    public String getDistributionChannel() {
-        return DistributionChannel;
+    public String getItemGrossWeight() {
+        return ItemGrossWeight;
     }
 
-    public void setDistributionChannel(String distributionChannel) {
-        DistributionChannel = distributionChannel;
+    public void setItemGrossWeight(String itemGrossWeight) {
+        ItemGrossWeight = itemGrossWeight;
     }
 
-    public String getOrganizationDivision() {
-        return OrganizationDivision;
+    public String getItemNetWeight() {
+        return ItemNetWeight;
     }
 
-    public void setOrganizationDivision(String organizationDivision) {
-        OrganizationDivision = organizationDivision;
+    public void setItemNetWeight(String itemNetWeight) {
+        ItemNetWeight = itemNetWeight;
     }
 
-    public String getSalesGroup() {
-        return SalesGroup;
+    public String getNetAmount() {
+        return NetAmount;
     }
 
-    public void setSalesGroup(String salesGroup) {
-        SalesGroup = salesGroup;
-    }
-
-    public String getSalesOffice() {
-        return SalesOffice;
-    }
-
-    public void setSalesOffice(String salesOffice) {
-        SalesOffice = salesOffice;
-    }
-
-    public String getSalesDistrict() {
-        return SalesDistrict;
-    }
-
-    public void setSalesDistrict(String salesDistrict) {
-        SalesDistrict = salesDistrict;
-    }
-
-    public String getSoldToParty() {
-        return SoldToParty;
-    }
-
-    public void setSoldToParty(String soldToParty) {
-        SoldToParty = soldToParty;
-    }
-
-    public String getCreationDate() {
-        return CreationDate;
-    }
-
-    public void setCreationDate(String creationDate) {
-        CreationDate = creationDate;
-    }
-
-    public String getCreatedByUser() {
-        return CreatedByUser;
-    }
-
-    public void setCreatedByUser(String createdByUser) {
-        CreatedByUser = createdByUser;
-    }
-
-    public String getLastChangeDate() {
-        return LastChangeDate;
-    }
-
-    public void setLastChangeDate(String lastChangeDate) {
-        LastChangeDate = lastChangeDate;
-    }
-
-    public String getSenderBusinessSystemName() {
-        return SenderBusinessSystemName;
-    }
-
-    public void setSenderBusinessSystemName(String senderBusinessSystemName) {
-        SenderBusinessSystemName = senderBusinessSystemName;
-    }
-
-    public String getExternalDocumentID() {
-        return ExternalDocumentID;
-    }
-
-    public void setExternalDocumentID(String externalDocumentID) {
-        ExternalDocumentID = externalDocumentID;
-    }
-
-    public String getLastChangeDateTime() {
-        return LastChangeDateTime;
-    }
-
-    public void setLastChangeDateTime(String lastChangeDateTime) {
-        LastChangeDateTime = lastChangeDateTime;
+    public void setNetAmount(String netAmount) {
+        NetAmount = netAmount;
     }
 }

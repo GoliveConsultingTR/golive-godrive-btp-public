@@ -6,13 +6,13 @@ import java.util.List;
 
 public class SalesOrderDModel {
     @SerializedName("d")
-    private SalesOrderResponse d;
+    private SalesOrderResults d;
 
-    public SalesOrderResponse getD() {
+    public SalesOrderResults getD() {
         return d;
     }
 
-    public void setD(SalesOrderResponse d) {
+    public void setD(SalesOrderResults d) {
         this.d = d;
     }
 }
